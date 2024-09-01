@@ -1,0 +1,34 @@
+Respaldar codigo en github
+
+primero inicializamos repositorio github
+git init
+
+
+preparar commit, al realizar este comando toma los cambios actuales para llevarlos al repo
+git add . indica que todos los ultimos cambios los prepare para la fotografia o listado de ultimos cambios hasta el momento
+
+
+
+git commit -m "Commit inicial"
+
+git checkout --. sirve para recuperar los ultimos cambio que se tomaron el commit
+
+
+Agregar el clone del repo en el equipo
+git remote add origin https://github.com/rapv97/Curso-de-angular-de-cero-a-experto.git
+
+
+
+renombrar la rama en la que nos encontramos y que le ponga main
+git brach -M main
+
+subir los cambios al repositorio
+
+git push -u origin main
+
+
+para seguir subiendo cambios a partir de la seguna vez
+
+basta con hacer el commit -m "Posible mensaje o descripcion de los cambios"
+
+git push          para subir los cambios por segunda vez ya no es necesario ponerle - u origin main
