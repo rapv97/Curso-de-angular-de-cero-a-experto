@@ -1,0 +1,110 @@
+
+
+Con angular podemos desarrollar para web para movil para movil nativo
+
+moviles nativeScript
+movil web ionic
+
+el mismo codigo de angular se aplica con otras tecnologias
+#Angular es un framework y es estandarizado sin importar las versiones
+#Viene con todo lo que se necesita para trabajar
+#Es modular, estos modulos tienen objetivos especificos
+#Google mantiene a Angular
+
+Bloques fundamentales
+
+componentes, rutas, rutas, Directivas, servicios, módulos
+
+#Componentes
+Se pueden ver como un bloque de codigo que tiene html y la clase de typescript
+
+#Servicios
+Hace que no sea necesario entrar en redux y los servicios se pueden utilizar y sin singleton permitiendo trabajar de forma centralizada
+Se usan en los componentes necesarios para consultar APIS etc
+
+#Directivas
+Directivas de componentes contiene codigo html reutilizable
+directivas estructurales modificar el dom o html, añadiendo o removiendo elementos
+directivas de atributos cambian la apariencia o comportamiento de de otra directiva, componente
+
+#Rutas
+
+Diferentes componentes que se pueden mostrar basados en el url del navegador
+
+#modulos
+agrupan todos los anteriores y otros modulos
+
+#Modulos de productos
+#modulo de autenticacion
+#modulos de clientes
+Permite incorporar componentes externos y utilizarlos por medio de modulos para su uso
+
+
+#Explicacion de archivos angular
+.editorConfig
+establece configuraciones por defecto en vs para el proyecto con configuracion del editor
+
+.gitIgnore
+Los archivos que esten  en gitignore nonse suben al repositorio, son archivos que se pueden generar como los modulos de node
+
+#angular.json
+Es importante y de ves en cuando se hacen algunas configuraciones para la ejecucion de la aplicacion
+
+package-lock.json
+Se manipula o crea cuando se agregan o quitan dependencias del proyecto, es algo propio de las aplicaciones de node
+
+
+package.json
+Archivo donde se registran cosas propias de las aplicaciones de node dependencias, scripts etc
+
+se pueden crear scripts en dado caso de ser necesario
+
+Readme
+Para explicar como correr la aplicación
+
+
+
+.angular
+Se genera de forma automatica con el proyecto ayuda a angular a manejar cahce, a renderizar con los cambios etc
+
+.vscode
+
+Es propio de visual estudio code y es ignorado en gitignore
+
+extension.json 
+para recomendaciones en desarrollo al levantar el proyecto
+
+##src
+
+Donde se crea el codigo de la aplicacion angular
+
+index.html
+contiene el approot que es a partir de donde se regenera la aplicacion  angular o se crea, como sigle page aplications
+
+
+main.ts
+Para configurar el entorno o plataformas objetivos como web o android etc
+
+
+styles.css
+para estilos globales
+
+
+#app
+donde se contruye la logica de la aplicacion
+contiene html css spec' testing  tambien componentes.ts la cual es la clase del componente principal y de ese se desprenden los demas
+
+app.modulo
+es el modulo principal y es bien delicado porque con algun cambio que se haga se puede desconfigurar nuestra aplicacions
+
+
+Assets
+es para mantener recursos estaticos como imagenes etc
+
+
+
+
+
+
+
+

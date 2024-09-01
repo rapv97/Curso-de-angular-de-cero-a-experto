@@ -1,0 +1,6 @@
+Crear proyecto
+ng new nombredelproyecto --standalone false  
+ng new 				--no-standalone
+se debe incluir --standalone false debido a que en angular 17 los proyectos se trabajan sin modulos
+y al agregarle esa propiedad se crea el proyecto con modulos de la forma tradicional
+
