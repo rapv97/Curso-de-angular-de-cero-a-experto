@@ -1,0 +1,25 @@
+<p>DBZ Personajes </p>
+
+<hr>
+
+<div class="row">
+    <div class="col">
+
+      <dbz-list [characterList]="characters"
+                (onDelete)="onDeleteCharacter($event)">
+
+      </dbz-list>
+
+
+      </div>
+    <div class="col">
+      <!-- Cuando queremos mandar mediante input del padre al hijo
+            o queremos asignar o pasar a un atributo se hace por medio de las llaves cuadradas[]
+            y cuando queremos escuchar evento se hace con parentesis()
+
+            cuando el evento onNewCharacter se emita, debemos asignarlo o decirle que hara el padre
+            con ese evento, el parametro se recibe como $event
+      -->
+      <dbz-add (onNewCharacter)="onNewCharacter($event)"></dbz-add>
+    </div>
+</div>
