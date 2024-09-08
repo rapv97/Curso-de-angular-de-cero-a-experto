@@ -4,9 +4,17 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build",
+    "build": "ng build && npm run copy:browser && npm run clean:browser",
+    "build:href": "ng build --base-href ./",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "build:gh": "ng build --output-path dist --base-href ./ ",
+    "copy:dist": "copyfiles dist/browser/*  ./docs -f",
+    "copy:browser": "copyfiles docs/browser/*  ./docs -f",
+    "clean:dist": "rd /s /q dist",
+    "clean:browser": "rd /s /q docs\\browser",
+    "deploy:gh": "npm run build:gh && npm run copy:dist && npm run clean:dist",
+    "nota":"para efectuar lo anterior se necesita instalart copyfiles"
   },
   "private": true,
   "dependencies": {
@@ -29,6 +37,7 @@
     "@angular/compiler-cli": "^17.0.0",
     "@types/jasmine": "~5.1.0",
     "@types/uuid": "^10.0.0",
+    "del-cli": "^5.1.0",
     "jasmine-core": "~5.1.0",
     "karma": "~6.4.0",
     "karma-chrome-launcher": "~3.2.0",
