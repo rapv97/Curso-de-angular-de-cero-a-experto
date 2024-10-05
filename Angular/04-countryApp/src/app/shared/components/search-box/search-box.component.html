@@ -1,0 +1,10 @@
+<input type="text"
+      [placeholder]="placeholder"
+      class="form-control"
+      (keyup)="onKeypress(txtSearch.value)"
+      [value]="initialValue"
+      #txtSearch
+      >
+
+      <!-- (keyup.enter)="emitValue( txtSearch.value)" -->
+      <!-- Implementacion de debounce -->
